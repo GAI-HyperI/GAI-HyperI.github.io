@@ -10,13 +10,25 @@
 	  <style>
       .jumbotron {
         position: relative;
-        background-image: url("assets/Boracay.jpeg");
-        background-size: cover;
-        background-position: center 60%;
-        color: white;
+        background-color: #ffffff; /* 设置背景颜色为白色 */
+        color: #ffffff;
+        padding: 2rem 0; /* 可选：增加上下的内边距 */
       }
-      
-      .jumbotron::before {
+
+      .jumbotron .background-image {
+        position: absolute;
+        top: 0;
+        left: 5%; /* 留出左边空白 */
+        width: 90%; /* 图片占据容器的90%，留出左右空白 */
+        height: 100%;
+        background-image: url("assets/Boracay.jpeg");
+        background-size: cover; /* 确保背景图片覆盖内层 div */
+        background-repeat: no-repeat; /* 防止背景图片重复 */
+        background-position: center 60%; /* 背景图片位置 */
+        z-index: 0; /* 确保背景图片在最底层 */
+      }
+
+      .jumbotron .background-image::before {
         content: '';
         position: absolute;
         top: 0;
@@ -26,14 +38,14 @@
         background: rgba(0, 0, 0, 0.2); /* Adjust the opacity to darken */
         z-index: 1;
       }
-      
+
       .jumbotron .container,
       .jumbotron .row,
       .jumbotron .col-12 {
         position: relative;
         z-index: 2;
       }
-      
+
       .jumbotron h1, 
       .jumbotron h4, 
       .jumbotron p, 
@@ -44,25 +56,28 @@
   </head>
   <body>
 <section>
-  <div class="jumbotron text-center mt-2">
+      <div class="jumbotron text-center mt-2">
+        <div class="background-image"></div> <!-- 背景图片容器 -->
         <div class="container">
           <div class="row">
-            <div class="col-12">
-              <h1><strong>The 1st International Workshop on Generative AI<br>and Hyper Intelligence (GAI-HyperI 2024) </strong></h1>
-              <h4>Held in conjunction with <u><a href="https://cyber-science.org/2024/cyberscitech/">CyberSciTech 2024</a></u>&nbsp; &nbsp;</h4>
-              <p><strong>November 5-8, 2024 - Boracay Island, Malay, Philippines &nbsp;</strong></p>
+            <div class="col-12 text-center">
+              <h2><strong>The 1st International Workshop on <br>
+                Generative AI and Hyper Intelligence <br>
+                (GAI-HyperI 2024) </strong></h2>
+<h4>Held in conjunction with <u><a href="https://cyber-science.org/2024/cyberscitech/">CyberSciTech 2024</a></u>&nbsp; &nbsp;</h4>
+              <h6><strong>November 5-8, 2024 - Boracay Island, Malay, Philippines &nbsp;</strong></h6>
             </div>
           </div>
         </div>
-  </div>
-  </section>
+      </div>
+    </section>
     <section>
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="text-left">Aim and Scope</h2>
-<h6 class="text-justify">Generative AI (GAI) has seen rapid advancements and gained immense popularity in recent years. With its extensive model parameters and learning from vast datasets, generative AI is capable of creating new content, such as text, images, music, and videos, which were once considered exclusive to human creativity. Popular generative AI including Large Language Models (LLMs) and Generative Adversarial Networks (GANs) have demonstrated remarkable capabilities in conversation systems and image generation. The creativity and adaptivity of generative AI are essential for the development of Hyper Intelligence.</h6><p>
-<h6 class="text-justify">Hyper Intelligence (HyperI) is an emerging interdisciplinary field focused on achieving super-intelligent abilities to tackle complex tasks. It involves the study of hyper-connections, hyper-compositions, hyper-collaborations, and hyper-cognition among intelligent entities. Hyper-intelligent systems are increasingly prevalent in various application, such as smart transportation, intelligent healthcare, and personalized education. However, the rise of these systems presents numerous challenges, including theoretical and framework development, security and safety concerns, and issues related to human interaction and personalization. We believe that generative AI can enable hyper-intelligent systems to devise innovative and adaptive solutions to handle the above challenges.&nbsp;</h6></p>
+            <h3 class="text-left">Aim and Scope</h3>
+<h6 class="text-justify"><b>Generative AI (GAI)</b> has seen rapid advancements and gained immense popularity in recent years. With its extensive model parameters and learning from vast datasets, generative AI is capable of creating new content, such as text, images, music, and videos, which were once considered exclusive to human creativity. Popular generative AI including Large Language Models (LLMs) and Generative Adversarial Networks (GANs) have demonstrated remarkable capabilities in conversation systems and image generation. The creativity and adaptivity of generative AI are essential for the development of Hyper Intelligence.</h6><p>
+<h6 class="text-justify"><b>Hyper Intelligence (HyperI)</b> is an emerging interdisciplinary field focused on achieving super-intelligent abilities to tackle complex tasks. It involves the study of hyper-connections, hyper-compositions, hyper-collaborations, and hyper-cognition among intelligent entities. Hyper-intelligent systems are increasingly prevalent in various application, such as smart transportation, intelligent healthcare, and personalized education. However, the rise of these systems presents numerous challenges, including theoretical and framework development, security and safety concerns, and issues related to human interaction and personalization. We believe that generative AI can enable hyper-intelligent systems to devise innovative and adaptive solutions to handle the above challenges.&nbsp;</h6></p>
 <h6 class="text-justify">This workshop aims to investigate both theoretical foundations and practical applications to address emerging challenges and opportunities in Hyper Intelligence. We welcome researchers to discuss and examine ongoing research on Hyper Intelligence by leveraging Generative AI.</h6>
           </div>
         </div>
@@ -71,11 +86,13 @@
     <section>
       <div class="container mt-2">
         <div class="row"> </div>
-        <h2>Topics</h2>
-        <h6><strong>Topics of interest include, but are not limited to:</strong></h6>
-        <ul>
-          <li>
-            <h6>Novel techniques for efficient application of generative AI</h6>
+        <h3>Topics</h3>
+<h6><strong>Topics of interest include, but are not limited to:</strong></h6>
+		  <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 text-left">
+			<ul>
+      <li>
+            <h6>Techniques for efficient application of generative AI</h6>
           </li>
           <li>
             <h6>Emerging capabilities of generative AI</h6>
@@ -84,10 +101,17 @@
             <h6>Interpretable and explainable generative AI</h6>
           </li>
 		  <li>
-            <h6>Application of generative AI in various domains, including (but not limited to) images, music, text, design, and motion</h6>
+            <h6>Application of generative AI including (but not limited to) <br>images, music, text, design, and motion</h6>
           </li>
           <li>
-            <h6>Frameworks and methodology for hyper-intelligent systems</h6>
+            <h6>Human interaction and personalization</h6>
+          </li>
+        </ul>
+          </div>
+		  <div class="col-lg-6 col-md-6 col-sm-12 text-left">
+			<ul>
+          <li>
+            <h6>Frameworks and methodology for hyper-intelligence</h6>
           </li>
           <li>
             <h6>Security and safety in hyper-intelligent systems</h6>
@@ -99,20 +123,19 @@
             <h6>Hyper-cognition and adaptability</h6>
           </li>
           <li>
-            <h6>Human interaction and personalization</h6>
-          </li>
-          <li>
-            <h6>Ethical issues, including misuses and abuses, provenance, copyright, bias, and diversity &nbsp;</h6>
+            <h6>Ethical issues, including misuses and abuses, <br>provenance, copyright, bias, and diversity</h6>
           </li>
         </ul>
+          </div>
+		 </div> 
 </div>
     </section>
 	
 	<section> 
   <div class="container mt-2">
     <div class="row"> </div>
-    <h2>Submission </h2>
-    <h6>Please follow the guideline in <a href="https://cyber-science.org/2024/cyberscitech/papersubmissions/" style="color: black;"><u>CyberSciTech 2024 Submission Web Site</u></a> to submit your work via EDA (<a href="https://edas.info/N32365"><u>https://edas.info/N32365</u></a>). <br>
+    <h3>Submission and Publication </h3>
+<h6>Please follow the guideline in <a href="https://cyber-science.org/2024/cyberscitech/papersubmissions/" style="color: black;"><u>CyberSciTech 2024 Submission Web Site</u></a> to submit your work via EDA (<a href="https://edas.info/N32365"><u>https://edas.info/N32365</u></a>). <br>
 	
     The submitted papers should be 4-6 pages long including figures and references, and prepared in IEEE CS Proceedings format. <br>IEEE formatting information: <br> <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html"><u>http://www.ieee.org/conferences_events/conferences/publishing/templates.html</u></a><br><br>
 	At least one of the authors of accepted paper is requested to register and present the paper at the conference.<br>
@@ -123,8 +146,8 @@
   <section> 
   <div class="container mt-2">
     <div class="row"></div>
-    <h2>Important Dates</h2>
-    <p style="color: firebrick;"><em>All deadlines are in the Anywhere on Earth timezone.&nbsp;</em></p>
+    <h3>Important Dates</h3>
+<p style="color: firebrick;"><em>All deadlines are in the Anywhere on Earth timezone.&nbsp;</em></p>
     <figure class="wp-block-table is-style-stripes has-medium-font-size">
       <table>
         <tbody>
@@ -164,8 +187,8 @@
 <section> 
   <div class="container mt-2">
     <div class="row"> </div>
-    <h2>Organizing Committee</h2>
-	  <br>
+    <h3>Organizing Committee</h3>
+    <br>
     <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 text-center">
 			<h4><strong>General Chair</strong></h4>
@@ -186,8 +209,8 @@
 	
   <section> 
   <div class="container mt-2">
-    <h2>Sponsored by</h2>
-	  <br>
+    <h3>Sponsored by</h3>
+    <br>
 	  <div class="row"> 
 	  <div class="col-lg-4 col-md-6 col-sm-12 text-center">
 		  <img alt="226 ×64" style="width: 226px; height: 64px;" src="assets/CyberMatrics-TC.png" data-holder-rendered="true">
@@ -211,9 +234,7 @@
           </h5>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-          <h2 class="m-0 text-center text-white">
-            GAI-HyperI 2024
-          </h2>
+          <h3 class="m-0 text-center text-white"> GAI-HyperI 2024 </h3>
         </div>
       </div>
     </div>
