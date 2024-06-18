@@ -241,9 +241,6 @@
           <h3 class="m-0 text-center text-white"> GAI-HyperI 2024 </h3>
         </div>
       </div>
-      <div>
-        This page has been visited <span id="visit-count">0</span> times.
-      </div>
     </div>
   </div>
 </footer>
@@ -253,63 +250,5 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap-4.4.1.js"></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const db = firebase.firestore();
-  
-      // Increase visit count
-      const incrementVisitCount = async () => {
-        const docRef = db.collection('siteData').doc('visits');
-        const doc = await docRef.get();
-        if (doc.exists) {
-          await docRef.update({ count: firebase.firestore.FieldValue.increment(1) });
-        } else {
-          await docRef.set({ count: 1 });
-        }
-      };
-  
-      // Display visit count
-      const displayVisitCount = async () => {
-        const docRef = db.collection('siteData').doc('visits');
-        const doc = await docRef.get();
-        if (doc.exists) {
-          document.getElementById('visit-count').textContent = doc.data().count;
-        } else {
-          document.getElementById('visit-count').textContent = 0;
-        }
-      };
-  
-      // Increment and display visit count
-      incrementVisitCount().then(displayVisitCount);
-    });
-  </script>
-  
   </body>
-
-
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyDmLTGHdKQPMqXgllx2fdpsnhksVsGgR88",
-      authDomain: "gai-hyperi.firebaseapp.com",
-      projectId: "gai-hyperi",
-      storageBucket: "gai-hyperi.appspot.com",
-      messagingSenderId: "19266056148",
-      appId: "1:19266056148:web:dccf3a0a7e03348de13041",
-      measurementId: "G-DJCG1HM42Q"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
-
 </html>
