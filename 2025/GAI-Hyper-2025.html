@@ -15,11 +15,11 @@
         padding: 2rem 0; /* 可选：增加上下的内边距 */
       }
       .jumbotron h2 {
-      font-size: 2.5rem; /* Adjust size as needed */
-      font-weight: bold;
-      text-shadow: 0 0 10px rgba(0, 100, 255, 0.8), 
-                  0 0 20px rgba(0, 100, 255, 0.6), 
-                  0 0 30px rgba(0, 100, 255, 0.4); /* Blue glowing effect */
+        font-size: 2.5rem; /* Adjust size as needed */
+        font-weight: bold;
+        text-shadow: 0 0 6px rgba(0, 100, 255, 0.7), 
+                    0 0 12px rgba(0, 100, 255, 0.5), 
+                    0 0 18px rgba(0, 100, 255, 0.3); /* Softer and less intense glow */
       }
       .jumbotron .background-image {
         position: absolute;
@@ -44,7 +44,9 @@
         background: rgba(0, 0, 0, 0.4); /* Adjust the opacity to darken */
         z-index: 1;
       }
-
+      .jumbotron h6.date-location {
+        color: yellow !important; /* Change only inside the jumbotron */
+      }
       .jumbotron .container,
       .jumbotron .row,
       .jumbotron .col-12 {
