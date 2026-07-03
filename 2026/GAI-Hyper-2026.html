@@ -64,6 +64,60 @@
       .jumbotron a {
         color: white;
       }
+
+      .topics-row {
+        align-items: stretch;
+      }
+
+      .topic-column {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .topic-column h5 {
+        margin-bottom: 0.6rem;
+      }
+
+      .topic-column ul {
+        display: block;
+        margin-bottom: 0;
+        padding-left: 1.5rem;
+      }
+
+      .topic-column li {
+        display: list-item;
+      }
+
+      .topic-column li h6 {
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+      }
+
+      @media (max-width: 767.98px) {
+        .topic-column {
+          display: block;
+          margin-bottom: 0.75rem;
+        }
+
+        .topic-column ul {
+          display: block;
+        }
+      }
+
+      .submission-publication h6 {
+        line-height: 1.55;
+        margin-bottom: 0.45rem;
+      }
+
+      .submission-publication h5 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .submission-publication ul {
+        margin-top: 0.25rem;
+        margin-bottom: 0.75rem;
+      }
     </style>
   </head>
 
@@ -91,11 +145,11 @@
         <div class="row">
           <div class="col-12 text-center">
             <h3 class="text-left">Aim and Scope</h3>
-            <h6 class="text-justify"><b>Generative AI (GAI)</b> has seen rapid advancements and gained immense popularity in recent years, transforming how intelligent systems generate, reason, interact, and act across digital and physical environments. Its evolution can be viewed across <b><a href="https://cyber-science.org/2025/panel/" target="_blank" style="color: #0056b3;">three intertwined dimensions</a></b>: (1) a rapidly expanding family of large and foundation models—including Large Language Models (LLMs), Vision-Language Models (VLMs), Large Multimodal Models (LMMs), and Large Reasoning Models (LRMs); (2) a shift from generative capability toward emerging forms of intelligence that can reason, create, plan, act, adapt, and collaborate; and (3) a new wave of intelligent technologies, systems, and applications that connect models with knowledge, tools, agents, humans, and the physical world. Key topics span next-generation foundation and reasoning models, agentic and multi-agent intelligence, advanced memory, planning and tool use, model–agent interoperability, world and embodied intelligence, human–AI collaboration, and the safety, trustworthiness, and evaluation of emerging intelligent systems.</h6>
+            <h6 class="text-justify"><b>Generative AI (GAI)</b> is becoming a new engine of intelligence. Beyond content generation, it is enabling intelligent systems that can reason, plan, act, adapt, and collaborate across digital and physical environments. Its evolution can be viewed across <b><a href="https://cyber-science.org/2025/panel/" target="_blank" style="color: #0056b3;">three intertwined dimensions</a></b>: an expanding family of large-scale foundation models, including Large Language Models (LLMs), Vision-Language Models (VLMs), Large Multimodal Models (LMMs), and Large Reasoning Models (LRMs); a shift in capability from generation-centered functions toward reasoning, action, adaptation, and collaboration; and the emergence of connected intelligent systems that link models with knowledge, tools, agents, humans, and the physical world. Together, these developments open a broad research space spanning foundation and reasoning models, agentic and multi-agent systems, memory, planning, tool use, human-AI collaboration, embodied intelligence, and the safety, trustworthiness, and evaluation of emerging intelligent systems.</h6>
             <p></p>
-            <h6 class="text-justify">Beyond individual AI models and systems, <b><a href="https://hyper-intelligence.org" target="_blank" style="color: #0056b3;">Hyper-Intelligence (HyperI)</a></b> investigates higher-level intelligent capabilities for accomplishing complex tasks through the hyper-connection, hyper-composition, hyper-collaboration, and hyper-cognition of diverse intelligent entities—human or artificial, physical or digital, and local or remote. Early signs are already emerging across domains—from AI agents that autonomously run a full cycle of scientific discovery (e.g., reviewing the literature and repurposing an existing drug in minutes), to self-driving laboratories, smart cities, adaptive healthcare, and collaborative robot teams—suggesting that nearly every field is moving toward hyper-intelligence. HyperI offers an interdisciplinary perspective on how heterogeneous forms of intelligence can be integrated into hyper-intelligent systems capable of complex problem solving, autonomous operation, scientific discovery, smart environments, and large-scale cyber-physical-social-human interaction. Key topics include collective and hybrid intelligence, human–AI collaboration, cyber-physical-social-human systems, autonomous and adaptive systems, brain-inspired intelligence, trustworthy intelligence, and responsible HyperI.</h6>
+            <h6 class="text-justify">Beyond individual AI models and systems, <b><a href="https://hyper-intelligence.org" target="_blank" style="color: #0056b3;">Hyper-Intelligence (HyperI)</a></b> points to the next frontier: higher-level capabilities emerging from the connection, composition, collaboration, and coordination of diverse intelligent entities, including humans, AI models, agents, robots, software tools, knowledge systems, and cyber-physical systems and environments. HyperI explores how these heterogeneous forms of intelligence can be integrated into systems that solve complex problems, operate autonomously, accelerate scientific discovery, support smart environments, enable personalized services, and facilitate large-scale cyber-physical-social-human interaction. It welcomes interdisciplinary research on collective and hybrid intelligence, human-AI collaboration, cyber-physical-social-human systems, autonomous and adaptive systems, brain-inspired intelligence, trustworthy intelligence, and responsible HyperI.</h6>
             <p></p>
-            <h6 class="text-justify">Building on the success of the GAI-HyperI workshops in 2024 and 2025, the 2026 edition—now the International Symposium on GAI-HyperI—continues to bring together researchers, practitioners, and experts from academia and industry to exchange recent advances, emerging ideas, and future perspectives on GAI and HyperI. It offers a forum to discuss their scientific foundations, enabling technologies, applications, and societal implications, and especially welcomes interdisciplinary work on how advanced AI and hyper-intelligent systems can augment human capabilities and support trustworthy, sustainable, and human-centered intelligent societies.</h6>
+            <h6 class="text-justify">Building on the success of the GAI-HyperI workshops in 2024 and 2025, the 2026 edition, now the International Symposium on GAI-HyperI, continues to bring together researchers, practitioners, and experts from academia and industry to exchange recent advances, emerging ideas, and future perspectives on GAI and HyperI. It offers a forum to discuss their scientific foundations, enabling technologies, applications, and societal implications, and especially welcomes interdisciplinary work on how advanced AI and hyper-intelligent systems can augment human capabilities and support trustworthy, sustainable, and human-centered intelligent societies.</h6>
             <p></p>
             <h6 class="text-justify"><strong>Topics of interest include, but are not limited to:</strong></h6>
           </div>
@@ -106,63 +160,63 @@
     <section>
       <div class="container mt-2">
         <div class="row"></div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 text-left">
+        <div class="row topics-row">
+          <div class="col-lg-6 col-md-6 col-sm-12 text-left topic-column">
             <h5><strong>Generative AI (GAI)</strong></h5>
             <ul>
               <li>
-                <h6>Foundation and reasoning models: LLMs, VLMs, LMMs, LRMs, and emerging architectures</h6>
+                <h6>Foundation, multimodal, and reasoning models: LLMs, VLMs, LMMs, LRMs, and world models</h6>
               </li>
               <li>
-                <h6>AI engineering: prompt, context, and agent engineering; RAG, distillation, and model adaptation</h6>
+                <h6>AI engineering for production GAI: prompt, context, and agent engineering; agentic RAG/GraphRAG and post-training</h6>
               </li>
               <li>
-                <h6>Agentic and multi-agent systems: planning, memory, tool use, and protocols (e.g., MCP)</h6>
+                <h6>Agentic AI systems: agent loop design, harness engineering, sandboxing/observability, and protocols (e.g., MCP, A2A)</h6>
               </li>
               <li>
-                <h6>Model fusion, collaboration, and human–AI teaming</h6>
+                <h6>Multi-agent collaboration and human-AI teaming: model fusion, cooperation, and personal/organizational AI agents</h6>
               </li>
               <li>
-                <h6>Incremental, continual, and lifelong learning</h6>
+                <h6>Incremental, continual, and self-evolving learning</h6>
               </li>
               <li>
-                <h6>Emerging capabilities and trends (e.g., AGI, creation-AI, thinking-AI, creative inference agents)</h6>
+                <h6>Emerging capabilities and trends: AGI-oriented systems, embodied reasoning, and autonomous research agents</h6>
               </li>
               <li>
-                <h6>Generative media: text, image, video, audio, music, and animation</h6>
+                <h6>Generative media: text, image, video, audio, music, animation, and 3D/4D generation</h6>
               </li>
               <li>
-                <h6>Interpretable, explainable, trustworthy, and safe generative AI</h6>
+                <h6>Interpretable, explainable, trustworthy, and safe GAI: alignment, robustness, watermarking, copyright, and governance</h6>
               </li>
             </ul>
           </div>
 
-          <div class="col-lg-6 col-md-6 col-sm-12 text-left">
-            <h5><strong>Hyper Intelligence (HyperI)</strong></h5>
+          <div class="col-lg-6 col-md-6 col-sm-12 text-left topic-column">
+            <h5><strong>Hyper-Intelligence (HyperI)</strong></h5>
             <ul>
               <li>
                 <h6>Hyper-connection, hyper-composition, hyper-collaboration, and hyper-cognition of intelligent entities</h6>
               </li>
               <li>
-                <h6>Collective, hybrid, and collaborative intelligence</h6>
+                <h6>Collective, hybrid, and collaborative intelligence across humans, agents, robots, and environments</h6>
               </li>
               <li>
-                <h6>Frameworks, architectures, and standards for hyper-intelligent systems</h6>
+                <h6>Frameworks, architectures, protocols, and standards for hyper-intelligent systems</h6>
               </li>
               <li>
-                <h6>Cyber-physical-social-human systems and digital twins</h6>
+                <h6>Physical AI, embodied intelligence, humanoid robotics, and cyber-physical-social-human systems</h6>
               </li>
               <li>
-                <h6>Autonomous, adaptive, and self-organizing systems</h6>
+                <h6>Autonomous, adaptive, self-organizing, and self-evolving systems</h6>
               </li>
               <li>
-                <h6>Brain-inspired and cognitive intelligence</h6>
+                <h6>Brain-inspired, cognitive, and neuro-symbolic intelligence</h6>
               </li>
               <li>
-                <h6>HyperI for scientific discovery, smart cities, healthcare, education, and robotics</h6>
+                <h6>HyperI for scientific discovery, smart cities, healthcare, education, industry, and robotics</h6>
               </li>
               <li>
-                <h6>Trustworthy, safe, and responsible HyperI: ethics, provenance, privacy, bias, and governance</h6>
+                <h6>Trustworthy, safe, and responsible HyperI: alignment, sovereignty, ethics, provenance, privacy, bias, and governance</h6>
               </li>
             </ul>
           </div>
@@ -171,28 +225,17 @@
     </section>
 
     <section>
-      <div class="container mt-2">
+      <div class="container mt-2 submission-publication">
         <div class="row"></div>
         <h3>Submission and Publication</h3>
 
-        <h6>
-          Please follow the guideline on the
-          <a href="https://cyber-science.org/2026/cyberscitech/" style="color: black;"><u>IEEE CyberSciTech 2026 Website</u></a>
-          and submit your work via EDAS
-          (<a href="https://edas.info/N35527" target="_blank" style="color: black;"><u>https://edas.info/N35527</u></a>). <br>
-
-          The submitted papers should be 4-6 pages long including figures and references, and prepared in IEEE CS Proceedings format. <br>
-          IEEE formatting information: <br>
-          <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html" style="color: black;"><u>http://www.ieee.org/conferences_events/conferences/publishing/templates.html</u></a><br><br>
-        </h6>
-        <h6>
-        <p class="text-justify">We also welcome <strong>Position Statement Papers</strong> (2-4 pages), which present novel ideas, hypotheses, and emerging research directions in Generative AI and Hyper Intelligence. These papers should be prepared in IEEE CS Proceedings format and will be peer-reviewed for novelty and impact.</p>
-        </h6>
-        <h6>
-          At least one of the authors of the accepted paper is requested to register and present the paper at the conference in <strong>hybrid mode</strong> (in person or virtually). All accepted papers are expected to be published in an IEEE Computer Society proceedings, subject to the final conference publication policy.&nbsp;
+        <h6 class="text-justify">
+          Authors should follow the submission guidelines on the <a href="https://cyber-science.org/2026/cyberscitech/" style="color: #0056b3;"><u>IEEE CyberSciTech 2026 website</u></a> and submit their papers through <a href="https://edas.info/N35527" target="_blank" style="color: #0056b3;"><u>EDAS</u></a>. Special Session Full Papers should be 4–6 pages, including figures and references. <strong>Position Statement Papers</strong> (2–4 pages) are also welcome, presenting novel ideas, hypotheses, or emerging research directions in Generative AI and Hyper Intelligence, and will be peer-reviewed for novelty and impact. All submissions must follow the IEEE Computer Society Proceedings format; templates are available on the <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html" style="color: #0056b3;"><u>IEEE conference template page</u></a>.
         </h6>
 
-        <h6><strong>Full CFP: TBA</strong></h6>
+        <h6 class="text-justify">
+          At least one author of each accepted paper must register and present in <strong>hybrid mode</strong> (in person or virtually). Accepted papers are expected to be included in the IEEE Computer Society proceedings, subject to the final conference publication policy.
+        </h6>
       </div>
     </section>
 
@@ -201,35 +244,7 @@
         <div class="row"></div>
         <h3>HAI-Q5 — Top 5 Questions for Hyper/Super AI</h3>
         <h6 class="text-justify">
-          We are launching <strong>HiQ5 (Hyper-Intelligence Questions: Top 5)</strong>—an open, community-driven call to collect the most important open questions shaping the future of Hyper/Super AI. Everyone is welcome to contribute; the organizers will curate and vote the submissions down to a final <strong>Top 5</strong>.
-        </h6>
-        <p></p>
-        <h6 class="text-justify">
-          The Top 5 questions will anchor a dedicated <strong>panel session at GAI-HyperI 2026</strong>, where they will be presented and openly discussed. <strong>The panel is open to everyone</strong>—researchers, practitioners, and students alike—to spark lively, forward-looking exchanges and new collaborations.
-        </h6>
-        <p></p>
-        <h6><strong>Example questions (for inspiration):</strong></h6>
-        <ul>
-          <li>
-            <h6>How can diverse human and AI entities be hyper-connected into a single trustworthy system?</h6>
-          </li>
-          <li>
-            <h6>When does collective intelligence emerge beyond the sum of its parts?</h6>
-          </li>
-          <li>
-            <h6>How should we define and measure &ldquo;hyper-intelligence&rdquo;?</h6>
-          </li>
-          <li>
-            <h6>How do we keep hyper-intelligence safe, controllable, and human-centered?</h6>
-          </li>
-        </ul>
-        <p></p>
-        <h6><strong>How to participate:</strong> submit your question via our Google Form (<a href="https://forms.gle/47aPSt7K7YaMBNTy7" target="_blank" style="color: #0056b3;"><u>https://forms.gle/47aPSt7K7YaMBNTy7</u></a>).</h6>
-        <h6><strong>Question submission deadline:</strong> September 10, 2026 (tentative).</h6>
-        <p></p>
-        <h6>
-          More details are available on the separate HAI-Q5 page:
-          <a href="HAI-Q5.html" style="color: #0056b3;"><u>HAI-Q5 Website</u></a>
+          An open event of <strong>GAI-HyperI 2026</strong> to collect forward-looking questions on the future of Hyper/Super AI. The final Top 5 questions will be curated and discussed in a dedicated panel session. Submissions are welcome through the <a href="https://forms.gle/47aPSt7K7YaMBNTy7" target="_blank" rel="noopener noreferrer" style="color: #0056b3;"><u>online Google Form</u></a> by <strong>September 10, 2026</strong> (tentative). See the <a href="HAI-Q5.html" style="color: #0056b3;"><u>HAI-Q5 Website</u></a> for more details.
         </h6>
       </div>
     </section>
